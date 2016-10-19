@@ -1,0 +1,20 @@
+<div class="marquee-container">
+  <div class="marquee">
+    <span class="marqueetext">texto de prueba</span>
+  </div>
+  <div class="spacer40"></div>
+  <div class="input-group change-transition">
+    <input id="input-message-transition" name="transition" type="text" class="form-control" placeholder="Set transition in seconds (10)" aria-describedby="basic-addon1">
+    <span class="input-group-addon" id="basic-addon1">Transition</span>
+  </div>
+  <div class="spacer10"></div>
+  <div class="input-group change-message">  
+    <input id="input-message-text" name="messagem" class="form-control" placeholder="Change the message in the marquee here..."> 
+    <div class="input-group-btn">
+      <button class="btn btn-primary" role="group" ng-click="changeMessage()">&nbsp;&nbsp;&nbsp;Send!&nbsp;&nbsp;&nbsp;</button>
+    </div> 
+  </div>
+  <div class="alert alert-warning alert-dismissible alert-marquee" role="alert"> 
+    <strong>Somethings wrong!</strong> Please check value in the inputs. 
+  </div>
+</div>

@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #FFFFFF; /*#232323;*/
+  color: #cecece;
+  height: 2200px
+}
+/* ==========================================================================
+   Home styles
+   ========================================================================== */
+   .home-container {
+    padding: 0;
+    margin: 0;
+  }
+  .container-header {
+    background-image: url("../media/template/img/header_Parallax.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 670px;
+  }
+  .nav-top-blue {
+    height: 10px;
+    background-color: #2F65C9;
+  }
+  .container-header div nav {
+    margin-bottom: 0;
+  }
+  .container-header div nav div div.navbar-header a {
+    padding: 13px 0px;
+  }
+  .container-header div nav div div.navbar-collapase ul li a {
+    color: #6f6f6f;
+    font-size: 16px;
+    padding-top: 42px;
+  }
+/* ==========================================================================
+   Navbar styles
+   ========================================================================== */
+   .navbar-style {
+    background-color: #323333;
+    border: 0;
+    border-bottom: 1px solid #2f65c9;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+  .navbar-style div div a.navbar-brand {
+    padding: 4px 15px;
+  }
+  .navbar-style div div.collapse ul.navbar-right li a {
+    color: #cecece;
+  }
+/* ==========================================================================
+   Text content digital signage styles
+   ========================================================================== */
+   .slideshow-content-text {
+    color: #2F65C9;
+  }
+  .bigger-text {
+    font-size: 66px;
+    font-weight: bold;
+  }
+  .big-text {
+    font-size: 38px;
+    text-align: right;
+    padding-right: 12px;
+  }
+  .text {
+    font-size: 22px;
+    color: #f2f2f2;
+  }
+  .signin-buttom .btn {
+    width: 50%;
+  }
+/* ==========================================================================
+   TV Digital Signage styles
+   ========================================================================== */
+   .slideshow-container {
+   }
+   .container-tv {
+    float: right;
+    width: 610px;
+    height: 360px;
+    background-color: #323333;
+    padding: 20px 20px;
+  }
+  .signage-header {
+    background-color: #ffffff;
+    color: #6f6f6f;
+    width: 384px;
+    height: 40px;
+    margin-bottom: 14px;
+  }
+  .signage-header div.row {
+    padding: 5px 15px;
+  }
+  .signage-header div.row div.col-sm-8 {
+    font-size: 11px;
+    text-align: right;
+  }
+  .signage-active-zone {
+    width: 384px;
+    height: 216px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+/* ==========================================================================
+Marquee substyles Signage */
+#btn-sTransition {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-left: 1px;
+  border-right: 1px;
+}
+.marquee-container {
+  width: 610px;
+}
+.signage-marquee {
+  width: 570px;
+  height: 40px;
+}
+.signage-marquee .marquee {
+  background-color: #ffffff;
+  display: block;
+  width: 570px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+}
+.signage-marquee .marquee span {
+  color: #00264D;
+  font-size: 20px;
+  display: inline-block;
+  padding-left: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.signage-slideshow {
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes scroll {
+  0% {-webkit-transform: translate(0, 0);}
+  100% {-webkit-transform: translate(-100%, 0);}
+}
+
+@-webkit-keyframes sliceUp {
+  from {height:  0;}
+  to {height: 90px;}
+}
+/* ==========================================================================
+Change Message input styles */
+.slideshow-container .change-message, .change-transition {
+  width: 100%;
+  margin-left: -20px;
+}
+.alert-marquee {
+  display: none;
+}
+/* ==========================================================================
+   Tools styles
+   ========================================================================== */
+   hr.header-separator {
+    border-top: 1px solid #dadada;
+  }
+  .spacer5 { height: 5px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+  .spacer10 { height: 10px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+  .spacer15 { height: 15px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+  .spacer20 { height: 20px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+  .spacer25 { height: 25px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+  .spacer30 { height: 30px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+  .spacer35 { height: 35px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+  .spacer40 { height: 40px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+  .spacer45 { height: 45px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+  .spacer50 { height: 50px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+  .spacer100 { height: 100px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+  .spacer200 { height: 200px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+/* ==========================================================================
+Carousel transitions styles */
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/* ==========================================================================
+Carousel transitions styles */
+.bv-form .help-block{margin-bottom:0}
+.bv-form .tooltip-inner{text-align:left}
+.nav-tabs li.bv-tab-success>a{color:#3c763d}
+.nav-tabs li.bv-tab-error>a{color:#a94442}
+.bv-form .bv-icon-no-label{top:0}
+.bv-form .bv-icon-input-group{top:0;z-index:100}
+/* ==========================================================================
+   Text content digital signage styles
+   ========================================================================== */
+   @media (max-width:1024px) and (min-width:769px) {
+    .col-md-5 {
+      width: 30.333337% !important;
+    }
+  /* ==========================================================================
+  Text content digital signage styles  */
+  .bigger-text {
+    font-size: 38px;
+    font-weight: bold;
+    padding-top: 34px;
+  }
+  .big-text {
+    font-size: 20px;
+    text-align: right;
+    padding-right: 8px;
+  }
+  .text {
+    font-size: 15px;
+    color: #6f6f6f;
+  }
+}
+/* ==========================================================================
+   THIRD CONTAINER - Scroll parallax content styles
+   ========================================================================== */
+   #third-container {
+    background-image: url("../media/template/img/bg_third.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 670px;
+    width: 100%;
+    height: 670px;
+    position: relative;
+    overflow: hidden;
+  }
+  .third-building1, .third-building2, .third-building3 {
+    background-position: center;
+    background-size: 100% 670px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 570px;
+    position: absolute;
+  }
+  .third-building1 {
+    background-image: url("../media/template/img/buildingp1.png");
+  }
+  .third-building2 {
+    background-image: url("../media/template/img/buildingp2.png");
+  }
+  .third-building3 {
+    background-image: url("../media/template/img/buildingp3.png");
+    color: #FFFFFF;
+    text-align: center;
+  }
+/* ==========================================================================
+Text content digital signage styles  */
+.third-whiteline {
+  background-color: #ffffff;
+  height: 6px;
+  margin-left: 78px;
+  max-width: 200px;
+  width: 100%; 
+}
+.third-tittle {
+  color: #ffffff;
+  font-size: 60px;
+  opacity: 0;
+}
+.third-vmsignage {
+  margin-left: 80px;
+  text-align: left;
+  color: #ffffff;
+  font-size: 40px;
+  opacity: 0;
+}
+.third-text {
+  color: #ffffff;
+  font-size: 20px;
+  opacity: 0;
+}
+/* ==========================================================================
+   FOURTH CONTAINER - Logos web technology 
+   ========================================================================== */
+   .fourth-container {
+    background-image: url("../media/template/img/logos_bg2.jpg");
+    background-size: cover;
+    /*background-color: #f5f5f5;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 310px;
+    width: 100%;
+  }
+  .fourth-text {
+    color: #737373;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 40px;
+    text-align: center;
+  }
+  .btn-fourth-1, .btn-fourth-2, .btn-fourth-3 {
+    text-align: center;
+  }
+  .btn-fourth-1 .btn {
+    width: 80%;
+    background-color: #1a558c;
+  }
+  .btn-fourth-2 .btn {
+    width: 80%;
+    background-color: #78A155;
+  }
+  .btn-fourth-3 .btn {
+    width: 80%;
+    background-color: #882A8F;
+  }
+/* ==========================================================================
+   FOOTER CONTAINER - Logos web technology 
+   ========================================================================== */
+  .footer-container {
+    background-color: #3f3f3f;
+    padding: 50px 0 12px 0;
+  }
+  /* ==========================================================================
+  Form contact us styles  */
+  #success_message{ 
+    display: none;
+  }
+  .form-tittle {
+    color: #cecece;
+  }
+
+  .footer-line {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    border-top: 1px solid #333333;
+  }
+  .reserve {
+    font-size: 10px;
+    padding-top: 4px;
+  }
+  .scrollToTop {
+    background-color: #606060;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
