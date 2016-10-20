@@ -43,17 +43,16 @@ cntManager.directive( 'headerZone', [ function(){
       currentTime();
 
       $.ajax({
-        crossOrigin: true,
-        url: 'http://ipinfo.io',
-        success: function(location) {
-          console.log(location);
-          $scope.nCity = location.data.city; 
+        url: "http://ipinfo.io", 
+        jsonp: "callback",
+        dataType: "jsonp",
+        data: {
+            format: "json"
+        },
+        success: function( response ) {
+            $scope.nCity = response.city; 
         }
       });
-
-      /*$http.get('http://ipinfo.io').then(function(location){
-        $scope.nCity = location.data.city;             
-      });*/
 
       function checkHour(t){
         if( t < 10 ) { t = '0' + t; }
