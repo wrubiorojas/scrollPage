@@ -43,7 +43,7 @@ cntManager.directive( 'headerZone', [ function(){
       currentTime();
 
       $.ajax({
-        url: "http://ipinfo.io", 
+        url: "https://ipinfo.io", 
         jsonp: "callback",
         dataType: "jsonp",
         data: {
