@@ -42,9 +42,18 @@ cntManager.directive( 'headerZone', [ function(){
       }
       currentTime();
 
-      $http.get('http://ipinfo.io').then(function(location){
-        $scope.nCity = location.data.city;             
+      $.ajax({
+        crossOrigin: true,
+        url: 'http://ipinfo.io',
+        success: function(location) {
+          console.log(location);
+          $scope.nCity = location.data.city; 
+        }
       });
+
+      /*$http.get('http://ipinfo.io').then(function(location){
+        $scope.nCity = location.data.city;             
+      });*/
 
       function checkHour(t){
         if( t < 10 ) { t = '0' + t; }
